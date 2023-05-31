@@ -11,11 +11,6 @@ e() {
     fi
 }
 
-# writes last path to file
-sv() {
-    echo $PWD > $TMP_DATA/.lastpath
-}
-
 # special movements 
 sd() {
     case $1 in
@@ -30,9 +25,6 @@ sd() {
             ;;
         t | temp)
             cd $TMP_DATA
-            ;;
-        *)
-            cd `cat $TMP_DATA/.lastpath`
             ;;
     esac
 }
