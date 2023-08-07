@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # neovim
 alias nv=nvim
@@ -9,9 +9,6 @@ alias l='ls'
 
 # clear
 alias c='clear'
-
-# remove temps
-alias rmtmps="rm $HOME/repositories/tmp/*"
 
 # git
 alias gs="git status"

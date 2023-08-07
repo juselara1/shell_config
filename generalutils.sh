@@ -11,22 +11,9 @@ e() {
     fi
 }
 
-# special movements 
-sd() {
-    case $1 in
-        gr | gitroot)
-            cd `git rev-parse --show-toplevel`
-            ;;
-        r | repos)
-            cd $REPOS
-            ;;
-        c | conf)
-            cd $CONF_REPOS
-            ;;
-        t | temp)
-            cd $TMP_DATA
-            ;;
-    esac
+# move to git root
+gr() {
+    cd `git rev-parse --show-toplevel`
 }
 
 # tmux
